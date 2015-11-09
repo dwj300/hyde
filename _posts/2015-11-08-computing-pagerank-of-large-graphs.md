@@ -9,7 +9,7 @@ title: Computing PageRank of a Large Graph on Hadoop
 
 For the <a href="https://wsdmcupchallenge.azurewebsites.net/">WSDM Cup Challenge</a> we wanted to compute the <a href="https://www.wikiwand.com/en/PageRank">pagerank</a> of a citation graph. In this case, the graph provided by Microsoft Research was a directed graph with 73,543,432 vertices and 757,462,733 edges. In order to do this efficiently, we are going to spin up a HD Insight Cluster on Microsoft Azure. I chose 5 D3 nodes, but this configuration can get pretty pricy. Once the cluster is deployed, ssh into the head node using the account you specified during cluster creation. Then lets get going:
 
-I reccomend doing all of this witihn a screen (or tmux) session.
+I reccomend doing all of this within a screen (or tmux) session.
 {% highlight bash %}
 $ screen
 {% endhighlight %}
