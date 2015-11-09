@@ -14,19 +14,19 @@ I reccomend doing all of this within a screen (or tmux) session.
 $ screen
 {% endhighlight %}
 
-Lets download the graph with wget:
+First download the graph with wget:
 {% highlight bash %}
 $ wget https://academicgraph.blob.core.windows.net/graph-2015-08-20/PaperReferences.zip
 {% endhighlight %}
 
-Lets unzip it. First we need to install p7zip (trust my, the stock unzip won't work), then we can actually unzip it. 
+Then unzip it. But first we need to install p7zip (trust me, the stock unzip won't work), then we can actually unzip it. 
 
 {% highlight bash %}
 $ sudo apt-get install p7zip-full
 $ 7za x PaperReferences.zip
 {% endhighlight %}
 
-Now we hit the first roadbloack. The graph package we will be using requires an edge file with node id's as integers, but the file we are given has strings. Never fear, lets just whip up some python to fix it.
+Now we hit the first roadblock. The graph package we will be using requires an edge file with node id's as integers, but the file we are given has strings. Never fear, let's just whip up some python to fix it.
 
 {% highlight python %}
 f = open('PaperReferences.txt', 'r')
