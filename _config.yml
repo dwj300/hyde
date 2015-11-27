@@ -9,12 +9,12 @@ permalink:        pretty
 title:            Doug Jordan
 tagline:          'Personal musings'
 description:      'Made by <a href="https://twitter.com/dwj300" target="_blank">@dwj300</a>.'
-url:              http://blog.dougjordan.com
+url:              https://blog.dougjordan.com
 baseurl:          /
 
 author:
   name:           'Douglas Jordan'
-  url:            'http://dougjordan.com'
+  url:            'https://dougjordan.com'
 
 paginate:         5
 
