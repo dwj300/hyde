@@ -7,7 +7,10 @@ title: How to hack a Mac
   tl;dr The most important thing to set on any mac.
 </div>
 
-Do you use a mac? Do you have an open firmware password set? If not, reboot your machine, and hold down command-R to enter recovery mode. From there, select Utilities from the menubar, then click Firmware Password to set a password. Make sure you remember this. If you ever forget it, you can take your machine to an apple store where they will do some funky process and call the mothership, then reset your password. There use to be an exploit where you could reboot without one of the ram sticks and it would reset the password, but that was patched a few years ago. Besides, most machines come with RAM soldered to the motherboard these days, so it is kind of a moot point. 
+Do you use a mac?
+Do you have an open firmware password set?
+If not, reboot your machine, and hold down command-R to enter recovery mode. From there, select Utilities from the menubar, then click Firmware Password to set a password. Make sure you remember this. If you ever forget it, you can take your machine to an apple store where they will do some funky process and call the mothership, then reset your password.
+There use to be an exploit where you could reboot without one of the ram sticks and it would reset the password, but that was patched a few years ago. Besides, most machines come with RAM soldered to the motherboard these days, so it is kind of a moot point. 
 
 The open firmware password is at the hardware level, and will require the user to enter a password in order to boot any other operating system (or mode). On my mac, I have this, so if my machine were to ever be stolen, it would effectively be a brick. Since the SSD is technically removable (although non-standard) in my 15 retina MBP, a thief could theoretically remove the SSD and replace it with a blank one from other world computing, but unfortunately for them, it would be impossible to install a new OS on that drive without my firmware password, which would be very difficult to crack considering you cannot simply get a hash can run john the ripper.
 
